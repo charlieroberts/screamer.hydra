@@ -21,7 +21,7 @@ Marching.export( window )
 Marching.materials.__clearOnEmit = false
 
 const prefix = `render = med lighting = () camera = (0 0 5) fog = (0 0 0 0) post = () background = (0 0 0)\n`
-const scream = code => screamer.run( prefix + code )
+window.scream = code => screamer.run( prefix + code )
 scream.canvas = canvas
 
 export default scream
